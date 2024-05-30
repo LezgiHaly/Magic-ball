@@ -2,8 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:surf_flutter_courses_template/assets/res.dart';
 
 /// Картинка главного экрана
-
-
 class ImageWidget extends StatelessWidget {
   final double scale;
   final Duration duration;

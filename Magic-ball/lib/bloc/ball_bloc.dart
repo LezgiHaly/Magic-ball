@@ -5,7 +5,6 @@ import 'package:surf_flutter_courses_template/bloc/ball_state.dart';
 import 'package:surf_flutter_courses_template/repositories/ipi.dart';
 
 /// Бизнес логика))
-
 class BallBloc extends Bloc<BallEvent, BallState> {
   BallBloc() : super(BallInitial()) {
     final BallRepository apiRepositories = BallRepository();

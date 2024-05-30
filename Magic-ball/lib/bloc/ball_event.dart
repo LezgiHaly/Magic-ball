@@ -1,5 +1,4 @@
 /// События приложения
-
 class BallEvent {}
 
 class LoadBall extends BallEvent {}

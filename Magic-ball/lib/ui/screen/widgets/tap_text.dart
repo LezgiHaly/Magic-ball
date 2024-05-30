@@ -4,7 +4,6 @@ import 'package:surf_flutter_courses_template/assets/strings.dart';
 import 'package:surf_flutter_courses_template/assets/styles.dart';
 
 /// Текст внизу экрана
-
 class TapText extends StatelessWidget {
   final double opacity;
   final Curve curve;

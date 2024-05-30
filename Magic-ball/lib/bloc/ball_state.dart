@@ -1,5 +1,4 @@
 /// Состояния приложения
-
 class BallState {}
 
 class BallInitial extends BallState {}

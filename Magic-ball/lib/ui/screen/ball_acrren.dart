@@ -11,7 +11,6 @@ import 'package:surf_flutter_courses_template/ui/screen/widgets/response_text.da
 import 'package:surf_flutter_courses_template/ui/screen/widgets/tap_text.dart';
 
 /// Главный экран приложения
-
 class BallScreen extends StatefulWidget {
   const BallScreen({super.key});
 
@@ -27,7 +26,7 @@ class _BallScreenState extends State<BallScreen> {
   Curve _curve = Curves.easeOutQuint;
   Curve _curveBg = Curves.easeOutQuint;
   double _opacityBg = 0;
-  final Duration _duration = const Duration(milliseconds: 2300);
+  final Duration _duration = const Duration(milliseconds: 300);
 
   /// никак не смог ошибку исправить чтоб работало при тряске телефона
 

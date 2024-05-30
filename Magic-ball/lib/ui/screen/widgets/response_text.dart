@@ -3,7 +3,6 @@ import 'package:surf_flutter_courses_template/assets/color.dart';
 import 'package:surf_flutter_courses_template/assets/styles.dart';
 
 /// Текст ответа
-
 class ResponseText extends StatelessWidget {
   final String responseText;
   // final double opacity;

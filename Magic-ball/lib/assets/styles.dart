@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-// Стили приложения
-
+/// Стили приложения
 class AppTypography {
   static const textText16Regular = TextStyle(
     fontSize: 16.0,

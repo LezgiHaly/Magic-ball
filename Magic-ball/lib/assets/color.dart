@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 /// Цвета приложения
-
 class AppColors {
   static const colorWhite = Color(0xFFFFFFFF);
   static const colorGrey = Color(0xFF727272);
