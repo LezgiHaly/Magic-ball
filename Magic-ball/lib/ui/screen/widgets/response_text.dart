@@ -6,11 +6,16 @@ import 'package:surf_flutter_courses_template/assets/styles.dart';
 
 class ResponseText extends StatelessWidget {
   final String responseText;
-
+  // final double opacity;
+  // final Curve curve;
+  // final Duration duration;
   const ResponseText(
     String title, {
     super.key,
     required this.responseText,
+    // required this.opacity,
+    // required this.curve,
+    // required this.duration,
   });
 
   @override

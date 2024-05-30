@@ -8,7 +8,7 @@ import 'package:surf_flutter_courses_template/repositories/ipi.dart';
 
 class BallBloc extends Bloc<BallEvent, BallState> {
   BallBloc() : super(BallInitial()) {
-    final ApiRepositories apiRepositories = ApiRepositories();
+    final BallRepository apiRepositories = BallRepository();
     bool stop = false;
     Future<void> loadMagicBall(event, emit) async {
       stop = false;
@@ -18,7 +18,7 @@ class BallBloc extends Bloc<BallEvent, BallState> {
       if (!stop && title != AppString.eror) {
         emit(BallLoad(title: title));
       } else if (title == AppString.eror) {
-        emit(BallEror(title: title));
+        emit(BallError(title: title));
       }
     }
 
