@@ -26,17 +26,17 @@ class _BallScreenState extends State<BallScreen> {
   Curve _curve = Curves.easeOutQuint;
   Curve _curveBg = Curves.easeOutQuint;
   double _opacityBg = 0;
-  final Duration _duration = const Duration(milliseconds: 300);
+  final Duration _duration = const Duration(milliseconds: 1300);
 
   /// никак не смог ошибку исправить чтоб работало при тряске телефона
 
-  // @override
-  // void initState() {
-  //   detector = ShakeDetector.autoStart(onPhoneShake: () {
-  //     _toggleZoom();
-  //   });
-  //   super.initState();
-  // }
+  @override
+  void initState() {
+    detector = ShakeDetector.autoStart(onPhoneShake: () {
+      _zoom();
+    });
+    super.initState();
+  }
 
   void _zoom() {
     setState(() {
@@ -76,6 +76,16 @@ class _BallScreenState extends State<BallScreen> {
             opacity: _opacity,
             curve: _curve,
             duration: _duration,
+          ),
+        ),
+        AnimatedOpacity(
+          opacity: _opacityBg,
+          duration: _duration,
+          curve: _curveBg,
+          child: Text(
+            'data',
+            style: AppTypography.textText56Regular
+                .copyWith(color: AppColors.colorWhite),
           ),
         ),
         AnimatedOpacity(
